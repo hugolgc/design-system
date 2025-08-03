@@ -1,0 +1,133 @@
+@layer components {
+    .button {
+        @apply flex items-center rounded-md;
+    }
+
+    .button-icon {
+        @apply size-5;
+    }
+
+    .button-label {
+        @apply px-0.5 font-semibold;
+    }
+
+    /* SM */
+    .button-sm {
+        @apply gap-1 px-3 py-2;
+    }
+
+    .button-sm .button-label {
+        @apply text-sm;
+    }
+
+    /* MD */
+    .button-md {
+        @apply gap-1 px-3.5 py-2.5;
+    }
+
+    .button-md .button-label {
+        @apply text-sm;
+    }
+
+    /* LG */
+    .button-lg {
+        @apply gap-1.5 px-4 py-2.5;
+    }
+
+    .button-lg .button-label {
+        @apply text-md;
+    }
+
+    /* XL */
+    .button-xl {
+        @apply gap-1.5 px-4.5 py-3;
+    }
+
+    .button-xl .button-label {
+        @apply text-md;
+    }
+
+    /* PRIMARY */
+    .button-primary {
+        @apply bg-brand-600 shadow-xs-skeumorphic;
+    }
+
+    .button-primary .button-icon {
+        @apply text-brand-300;
+    }
+
+    .button-primary .button-label {
+        @apply text-white;
+    }
+
+    /* PRIMARY HOVER */
+    .button-primary:hover {
+        @apply bg-brand-700;
+    }
+
+    .button-primary:hover .button-icon {
+        @apply text-brand-200;
+    }
+
+    /* PRIMARY FOCUS */
+    .button-primary:focus {
+        @apply outline-brand-500 outline-2 outline-offset-2;
+    }
+
+    /* PRIMARY DISABLED */
+    .button-primary:disabled {
+        @apply bg-gray-100;
+    }
+
+    .button-primary:disabled .button-icon {
+        @apply text-gray-300;
+    }
+
+    .button-primary:disabled .button-label {
+        @apply text-gray-400;
+    }
+
+    /* SECONDARY */
+    .button-secondary {
+        @apply shadow-xs-skeumorphic bg-white;
+    }
+
+    .button-secondary .button-icon {
+        @apply text-gray-400;
+    }
+
+    .button-secondary .button-label {
+        @apply text-gray-700;
+    }
+
+    /* SECONDARY HOVER */
+    .button-secondary:hover {
+        @apply bg-gray-50;
+    }
+
+    .button-secondary:hover .button-icon {
+        @apply text-gray-500;
+    }
+
+    .button-secondary:hover .button-label {
+        @apply text-gray-800;
+    }
+
+    /* SECONDARY FOCUS */
+    .button-secondary:focus {
+        @apply outline-brand-500 outline-2 outline-offset-2;
+    }
+
+    /* SECONDARY DISABLED */
+    .button-secondary:disabled {
+        @apply bg-white;
+    }
+
+    .button-secondary:disabled .button-icon {
+        @apply text-gray-300;
+    }
+
+    .button-secondary:disabled .button-label {
+        @apply text-gray-400;
+    }
+}

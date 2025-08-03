@@ -1,0 +1,69 @@
+@layer components {
+    .badge {
+        @apply flex items-center rounded-full border;
+    }
+
+    .badge-sm {
+        @apply gap-0.5 px-1.25 py-px;
+    }
+
+    .badge-md {
+        @apply gap-1 px-1.75 py-px;
+    }
+
+    .badge-lg {
+        @apply gap-1 px-2.25 py-0.75;
+    }
+
+    /* DOT */
+
+    .badge-dot {
+        @apply size-2;
+    }
+
+    /* LABEL */
+
+    .badge-label {
+        @apply px-0.5 font-medium;
+    }
+
+    .badge-sm .badge-label {
+        @apply text-xs;
+    }
+
+    .badge-md .badge-label {
+        @apply text-sm;
+    }
+
+    .badge-lg .badge-label {
+        @apply text-sm;
+    }
+
+    /* PRIMARY */
+
+    .badge-primary {
+        @apply border-brand-200 bg-brand-50;
+    }
+
+    .badge-primary .badge-dot {
+        @apply text-brand-500;
+    }
+
+    .badge-primary .badge-label {
+        @apply text-brand-700;
+    }
+
+    /* SECONDARY */
+
+    .badge-secondary {
+        @apply border-gray-200 bg-gray-50;
+    }
+
+    .badge-secondary .badge-dot {
+        @apply text-gray-500;
+    }
+
+    .badge-secondary .badge-label {
+        @apply text-gray-700;
+    }
+}

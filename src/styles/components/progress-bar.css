@@ -1,0 +1,17 @@
+@layer components {
+    .progress {
+        @apply flex items-center gap-3;
+    }
+
+    .progress-bar {
+        @apply flex-1 rounded-full bg-gray-200;
+    }
+
+    .progress-value {
+        @apply bg-brand-600 h-2 rounded-full;
+    }
+
+    .progress-label {
+        @apply flex-none text-sm font-medium text-gray-700;
+    }
+}

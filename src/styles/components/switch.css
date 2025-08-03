@@ -1,0 +1,91 @@
+@layer components {
+    .switch {
+        @apply flex items-start;
+    }
+
+    .switch-sm {
+        @apply gap-2;
+    }
+
+    .switch-md {
+        @apply gap-3;
+    }
+
+    /* CONTROL */
+    .switch-control {
+        @apply flex-none;
+    }
+
+    /* CHECKBOX */
+    .switch-checkbox {
+        @apply sr-only;
+    }
+
+    /* TOGGLE */
+    .switch-toggle {
+        @apply flex rounded-full bg-gray-100 p-0.5;
+    }
+
+    .switch-sm .switch-toggle {
+        @apply w-9;
+    }
+
+    .switch-md .switch-toggle {
+        @apply w-11;
+    }
+
+    /* TOGGLE BUTTON */
+    .switch-toggle::before {
+        @apply block rounded-full bg-white shadow-sm content-[''];
+    }
+
+    .switch-sm .switch-toggle::before {
+        @apply size-4;
+    }
+
+    .switch-md .switch-toggle::before {
+        @apply size-5;
+    }
+
+    /* LABEL */
+    .switch-label {
+        @apply flex flex-1 flex-col;
+    }
+
+    .switch-sm .switch-label {
+        @apply text-sm;
+    }
+
+    .switch-md .switch-label {
+        @apply gap-0.5;
+    }
+
+    /* TITLE */
+    .switch-title {
+        @apply font-medium text-gray-700;
+    }
+
+    /* SUBTITLE */
+    .switch-subtitle {
+        @apply text-gray-600;
+    }
+
+    /* CHECKED */
+    .switch-checkbox:checked + .switch-toggle {
+        @apply bg-brand-600 justify-end;
+    }
+
+    .switch-checkbox:checked:hover + .switch-toggle {
+        @apply bg-brand-700;
+    }
+
+    /* FOCUS */
+    .switch-checkbox:focus + .switch-toggle {
+        @apply outline-brand-500 outline-2 outline-offset-2;
+    }
+
+    /* DISABLED */
+    .switch-checkbox:disabled + .switch-toggle::before {
+        @apply bg-gray-50;
+    }
+}

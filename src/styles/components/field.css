@@ -1,0 +1,83 @@
+@layer components {
+    /* BASE COMPONENTS */
+    .field {
+        @apply flex flex-col gap-1.5;
+    }
+
+    .field-label {
+        @apply text-sm font-semibold text-gray-700;
+    }
+
+    .field-required {
+        @apply text-brand-600;
+    }
+
+    .field-input {
+        @apply shadow-xs-skeumorphic w-full rounded-md bg-white px-3 py-2;
+    }
+
+    .field-input::placeholder {
+        @apply text-gray-500;
+    }
+
+    .field-hint {
+        @apply text-sm text-gray-600;
+    }
+
+    /* INPUT FOCUS */
+    .field-input:focus {
+        @apply outline-brand-500 outline-2 -outline-offset-2;
+    }
+
+    /* INPUT DISABLED */
+    .field-input:disabled {
+        @apply bg-gray-50;
+    }
+
+    /* FIELD ERROR */
+    .field-error .field-input {
+    }
+
+    .field-error .field-input:focus {
+        @apply outline-error-500;
+    }
+
+    .field-error .field-hint {
+        @apply text-error-600;
+    }
+
+    /* FIELD ICON */
+    .field-control {
+        @apply relative;
+    }
+
+    .field-icon {
+        @apply absolute size-5 text-gray-400;
+    }
+
+    /* FIELD SM */
+    .field-sm .field-input {
+        @apply px-3 py-2;
+    }
+
+    .field-sm .field-control .field-input {
+        @apply pl-10;
+    }
+
+    .field-sm .field-icon {
+        @apply top-2.5 left-3;
+    }
+
+    /* FIELD MD */
+    .field-md .field-input {
+        @apply px-3.5 py-2.5;
+    }
+
+    .field-md .field-control .field-input {
+        @apply pl-10.5;
+    }
+
+    .field-md .field-icon {
+        @apply top-3 left-3.5;
+    }
+}

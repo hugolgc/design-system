@@ -1,0 +1,56 @@
+@layer components {
+    .button-group {
+        @apply flex;
+    }
+
+    .button-group-item {
+        @apply flex flex-none gap-1 border-y border-r border-gray-300 bg-white px-3.25 py-2.25 shadow-xs;
+    }
+
+    .button-group-item:first-child {
+        @apply rounded-l-md border-l;
+    }
+
+    .button-group-item:last-child {
+        @apply rounded-r-md;
+    }
+
+    .button-group-icon {
+        @apply size-5 text-gray-400;
+    }
+
+    .button-group-label {
+        @apply px-0.5 text-sm font-semibold text-gray-700;
+    }
+
+    /* HOVER */
+    .button-group-item:hover {
+        @apply bg-gray-50;
+    }
+
+    .button-group-item:hover .button-group-icon {
+        @apply text-gray-500;
+    }
+
+    .button-group-item:hover .button-group-label {
+        @apply text-gray-800;
+    }
+
+    /* FOCUS */
+    .button-group-item:focus {
+        @apply outline-brand-500 outline-2 outline-offset-2;
+    }
+
+    /* DISABLED */
+    .button-group-item:disabled {
+        @apply bg-white;
+    }
+
+    .button-group-item:disabled .button-group-icon {
+        @apply text-gray-300;
+    }
+
+    .button-group-item:disabled .button-group-label {
+        @apply text-gray-500;
+    }
+}
