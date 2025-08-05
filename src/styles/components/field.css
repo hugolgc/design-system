@@ -1,5 +1,4 @@
 @layer components {
-    /* BASE COMPONENTS */
     .field {
         @apply flex flex-col gap-1.5;
     }
