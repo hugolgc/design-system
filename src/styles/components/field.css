@@ -35,10 +35,7 @@
 
     /* FIELD ERROR */
     .field-error .field-input {
-    }
-
-    .field-error .field-input:focus {
-        @apply outline-error-500;
+        @apply outline-error-500 outline-2 -outline-offset-2;
     }
 
     .field-error .field-hint {
