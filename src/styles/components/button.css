@@ -47,6 +47,15 @@
         @apply text-md;
     }
 
+    /* LOADING */
+    .button-loading {
+        @apply pointer-events-none;
+    }
+
+    .button-loading .button-icon {
+        @apply animate-spin;
+    }
+
     /* PRIMARY */
     .button-primary {
         @apply bg-brand-600 shadow-xs-skeumorphic;
@@ -60,12 +69,14 @@
         @apply text-white;
     }
 
-    /* PRIMARY HOVER */
-    .button-primary:hover {
+    /* PRIMARY HOVER OR LOADING */
+    .button-primary:hover,
+    .button-primary.button-loading {
         @apply bg-brand-700;
     }
 
-    .button-primary:hover .button-icon {
+    .button-primary:hover .button-icon,
+    .button-primary.button-loading .button-icon {
         @apply text-brand-200;
     }
 
@@ -100,16 +111,19 @@
         @apply text-gray-700;
     }
 
-    /* SECONDARY HOVER */
-    .button-secondary:hover {
+    /* SECONDARY HOVER OR LOADING */
+    .button-secondary:hover,
+    .button-secondary.button-loading {
         @apply bg-gray-50;
     }
 
-    .button-secondary:hover .button-icon {
+    .button-secondary:hover .button-icon,
+    .button-secondary.button-loading .button-icon {
         @apply text-gray-500;
     }
 
-    .button-secondary:hover .button-label {
+    .button-secondary:hover .button-label,
+    .button-secondary.button-loading .button-label {
         @apply text-gray-800;
     }
 
