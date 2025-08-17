@@ -12,11 +12,15 @@
     }
 
     .field-input {
-        @apply shadow-xs-skeumorphic w-full rounded-md bg-white px-3 py-2;
+        @apply shadow-xs-skeumorphic w-full rounded-md bg-white;
     }
 
     .field-input::placeholder {
         @apply text-gray-500;
+    }
+
+    .field-select {
+        @apply shadow-xs-skeumorphic w-full appearance-none rounded-md bg-white;
     }
 
     .field-hint {
@@ -24,17 +28,20 @@
     }
 
     /* INPUT FOCUS */
-    .field-input:focus {
+    .field-input:focus,
+    .field-select:focus {
         @apply outline-brand-500 outline-2 -outline-offset-2;
     }
 
     /* INPUT DISABLED */
-    .field-input:disabled {
+    .field-input:disabled,
+    .field-select:disabled {
         @apply bg-gray-50;
     }
 
     /* FIELD ERROR */
-    .field-error .field-input {
+    .field-error .field-input,
+    .field-error .field-select {
         @apply outline-error-500 outline-2 -outline-offset-2;
     }
 
@@ -47,12 +54,17 @@
         @apply relative;
     }
 
-    .field-icon {
+    .field-control:has(.field-input) .field-icon {
         @apply absolute size-5 text-gray-400;
     }
 
+    .field-control:has(.field-select) .field-icon {
+        @apply absolute text-gray-400;
+    }
+
     /* FIELD SM */
-    .field-sm .field-input {
+    .field-sm .field-input,
+    .field-sm .field-select {
         @apply px-3 py-2;
     }
 
@@ -60,12 +72,21 @@
         @apply pl-10;
     }
 
-    .field-sm .field-icon {
+    .field-sm .field-control .field-select {
+        @apply pr-9;
+    }
+
+    .field-sm .field-control:has(.field-input) .field-icon {
         @apply top-2.5 left-3;
     }
 
+    .field-sm .field-control:has(.field-select) .field-icon {
+        @apply top-3 right-3 size-4;
+    }
+
     /* FIELD MD */
-    .field-md .field-input {
+    .field-md .field-input,
+    .field-md .field-select {
         @apply px-3.5 py-2.5;
     }
 
@@ -73,7 +94,15 @@
         @apply pl-10.5;
     }
 
-    .field-md .field-icon {
+    .field-md .field-control .field-select {
+        @apply pr-10.5;
+    }
+
+    .field-md .field-control:has(.field-input) .field-icon {
         @apply top-3 left-3.5;
+    }
+
+    .field-md .field-control:has(.field-select) .field-icon {
+        @apply top-3 right-3.5 size-5;
     }
 }
