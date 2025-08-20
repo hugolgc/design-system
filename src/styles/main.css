@@ -4,6 +4,7 @@
 
 @import "./core/theme.css";
 
+@import "./components/tag.css";
 @import "./components/field.css";
 @import "./components/avatar.css";
 @import "./components/badge.css";

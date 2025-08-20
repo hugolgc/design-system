@@ -1,0 +1,65 @@
+@layer components {
+    .tag {
+        @apply flex items-center gap-0.75 rounded-sm border border-gray-300 bg-white;
+    }
+
+    .tag-label {
+        @apply font-medium text-gray-700;
+    }
+
+    .tag-icon {
+        @apply text-gray-400;
+    }
+
+    /* SM */
+    .tag-sm {
+        @apply px-1.75 py-0.5;
+    }
+
+    .tag-sm .tag-label {
+        @apply text-xs;
+    }
+
+    .tag-sm .tag-icon {
+        @apply -mr-1 size-3.5;
+    }
+
+    /* MD */
+    .tag-md {
+        @apply px-2 py-0.25;
+    }
+
+    .tag-md .tag-label {
+        @apply text-sm;
+    }
+
+    .tag-md .tag-icon {
+        @apply -mr-1.25 size-4;
+    }
+
+    /* LG */
+    .tag-lg {
+        @apply px-2.25 py-0.75;
+    }
+
+    .tag-lg .tag-label {
+        @apply text-sm;
+    }
+
+    .tag-lg .tag-icon {
+        @apply -mr-1.5 size-5;
+    }
+
+    /* HOVER */
+    .tag:hover {
+        @apply bg-gray-50;
+    }
+
+    .tag:hover .tag-label {
+        @apply text-gray-800;
+    }
+
+    .tag:hover .tag-icon {
+        @apply text-gray-500;
+    }
+}
