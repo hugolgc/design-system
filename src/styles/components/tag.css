@@ -1,4 +1,8 @@
 @layer components {
+    .tag-group {
+        @apply flex flex-wrap gap-1.5;
+    }
+
     .tag {
         @apply flex items-center gap-0.75 rounded-sm border border-gray-300 bg-white;
     }
