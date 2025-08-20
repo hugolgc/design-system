@@ -1,6 +1,6 @@
 @layer components {
     .section-header {
-        @apply flex flex-col gap-4 border-b border-gray-200 pb-5 lg:flex-row;
+        @apply flex flex-col items-start gap-4 border-b border-gray-200 pb-5 lg:flex-row;
     }
 
     .section-header .section-left {
