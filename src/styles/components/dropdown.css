@@ -1,6 +1,6 @@
 @layer components {
     .dropdown {
-        @apply absolute inset-x-0 hidden overflow-hidden rounded-md border border-gray-300 bg-white shadow-xs;
+        @apply absolute inset-x-0 z-10 hidden overflow-hidden rounded-md border border-gray-300 bg-white shadow-xs;
     }
 
     .dropdown.dropdown-open {
